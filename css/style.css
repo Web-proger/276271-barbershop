@@ -1,3 +1,5 @@
+/***** 1. Общие стили *****/
+/*** Шрифты ***/
 body {
 	font-family: "PT Sans Narrow", "Arial", sans-serif;
 	font-size: 14px;
@@ -18,3 +20,272 @@ h2 {
 	line-height: 42px;
 	font-weight: 700;
 }
+
+/*** Clearfix ***/
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/***** 2. Сетка *****/
+	/*-- Общее --*/
+/***Центровщик блоков**/
+.container {
+	width: 940px;
+	padding: 0 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*** Шапка (header) ***/
+.main-menu {
+	float: left;
+	width: 720px;
+}
+
+.user-block {
+	float: right;
+	width: 160px;
+}
+
+/*** breadcrumbs  ***/
+.breadcrumbs {
+	margin-bottom: 55px;
+}
+
+/*** Подвал (footer) ***/
+.main-footer {
+	padding-top: 60px;
+	padding-bottom: 41px;
+}
+
+.footer-contacts {
+	float: left;
+	width: 320px;
+	margin-right: 80px;
+}
+
+.footer-social {
+	float: left;
+	width: 140px;
+}
+
+.footer-copyright {
+	float: right;
+	width: 140px;
+}
+
+/*** Основной контент (main) ***/
+	/*-- index.html (главная) --*/
+.main-index {
+	padding-top: 60px;
+	padding-bottom: 65px;
+}
+
+.index-logo {
+	width: 368px;
+	height: 204px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.features {
+	margin-bottom: 80px;
+}
+
+.features-item {
+	display: inline-block;
+	width: 300px;
+	margin-right: 20px;
+	margin-left: -4px;
+	vertical-align: top;
+}
+	/*убираем отрицательный отступ у первого элемента,
+	сделайный для ликвидиции пробела inline-block */
+.features-item:first-child {
+	margin-left: 0;
+}
+
+.features-item:last-child {
+	margin-right: 0;
+}
+
+.index-content {
+	padding: 50px 80px;
+	margin-bottom: 35px
+}
+
+.news,
+.contacts {
+	float: left;
+	width: 380px;
+}
+
+.gallery,
+.enroll {
+	float: right;
+	width: 300px;
+}
+
+	/*-- price.html (прайс) --*/
+.main-price {
+	padding-top: 55px;
+	padding-bottom: 80px;
+}
+
+.price-features {
+	float: left;
+	width: 300px;
+}
+
+.service-prices {
+	float: right;
+	width: 460px;
+}
+
+.slogan {
+	margin-bottom: 72px;
+}
+
+.about-us-left-col {
+	float: left;
+	width: 380px;
+}
+
+.about-us-right-col {
+	float: right;
+	width: 380px;
+	margin-right: 80px;
+}
+
+	/*-- shop.html (магазин) --*/
+.main-shop  {
+	padding-top: 55px;
+	padding-bottom: 49px;
+}
+
+.sorting {
+	float: left;
+	width: 180px;
+	margin-right: 60px;
+}
+
+.catalog {
+	float: right;
+	width: 700px;
+}
+
+.catalog-item {
+	display: inline-block;
+	width: 220px;
+	margin-right: 20px;
+	margin-left: -4px;
+	vertical-align: top;
+}
+
+.catalog-item:nth-child(1),
+.catalog-item:nth-child(4) {
+	margin-left: 0;
+}
+
+.catalog-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.pagination {
+	padding-top: 45px;
+}
+
+	/*-- item.html (товар) --*/
+
+.main-item {
+	padding-top: 55px;
+	padding-bottom: 49px;
+}
+
+.item-gallery {
+	float: left;
+	width: 460px;
+}
+
+.item-description {
+	float: right;
+	width: 390px;
+}
+
+.item-gallery-preview {
+	padding-top: 20px;
+	font-size: 0;
+}
+
+.item-gallery-preview img {
+	margin-right: 20px;
+	outline: 1px solid pink;
+}
+
+.item-gallery-preview img:last-child {
+	margin-right: 0;
+}
+
+.product-available {
+	float: left;
+}
+
+.product-article {
+	float: right;
+}
+
+
+
+/***** - Для тестирования - *****/
+/**Ободка главных модулей**/
+header,
+main,
+footer {
+	outline: 3px solid blue;
+}
+
+/**Ободка главных модулей**/
+.container {
+	outline: 2px solid gray;
+}
+
+/**Ободка блоков "второй" вложенности**/
+.main-menu,
+.user-block,
+.features,
+.index-logo,
+.index-content,
+.main-footer,
+.breadcrumbs,
+.slogan,
+.price-content,
+.about-us,
+.sorting,
+.catalog,
+.item-gallery,
+.item-description {
+	outline: 2px solid green;
+}
+
+/**Ободка блоков "третий" вложенности**/
+.features-item,
+.news,
+.contacts,
+.gallery,
+.enroll,
+.footer-contacts,
+.footer-social,
+.footer-copyright,
+.price-features,
+.service-prices,
+.about-us-right-col,
+.about-us-left-col,
+.pagination,
+.item-gallery-preview {
+	outline: 1px solid pink;
+}
+
+
+
