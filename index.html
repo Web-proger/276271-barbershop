@@ -8,7 +8,7 @@
   <body>
     <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
     <!-- Шапка сайта -->
-    <header class="main-header container clearfix">
+    <header>
     	<!-- Навигационное меню -->
     	<nav class="main-menu">
     		<ul>
@@ -28,16 +28,16 @@
     				<a href="#contacts-anchor">Контакты</a>
     			</li>
     		</ul>
-     	</nav>
-		<!-- Блок входа -->
-		<div class="user-block">
-			<a href="#">Вход</a>
-		</div>
+    		<!-- Блок входа -->
+    		<div class="user-block">
+    			<a href="#">Вход</a>
+    		</div>
+    	</nav>
     </header>
 
 
     <!-- Основной контент -->
-    <main class="main-index container">
+    <main>
     	<!-- Логотип -->
     	<div class="index-logo">
     		<img src="img/logo.png"  alt="Логотип Barbershop" width="368" height="204">
@@ -60,7 +60,7 @@
 		</section>
 
 		<!-- Блок новостей и фотогалерея -->
-		<section class="index-content clearfix">
+		<section class="index-content">
 			<!-- Блок новостей -->
 			<div id="news-anchor" class="news">
 				<h2>Новости</h2>
@@ -71,7 +71,7 @@
 				<a class="btn" href="#">Все новости</a>
 			</div>
 			<!-- Галерея -->
-			<div class="gallery ">
+			<div class="gallery">
 				<h2>Фотогалерея</h2>
 				<div class="gallery-img">
 					<a class="zoom-image" href="#">
@@ -85,7 +85,7 @@
 		</section>
 
 		<!-- Блок Контактная информация и Запись на стрижку -->
-		<section class="index-content clearfix">
+		<section class="index-content">
 			<!-- Блок контактов -->
 			<div id="contacts-anchor" class="contacts">
 				<h2>Контактная информация</h2>
@@ -107,10 +107,10 @@
 				<h2>Записаться</h2>
 				<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения </p>
 				<form action="post">
-					<input type="text" name="date" placeholder="Дата">
-					<input type="text" name="time" placeholder="Время">
-					<input type="text" name="name" placeholder="Ваше имя">
-					<input type="tel" name="phone" placeholder="Телефон">
+					<input type="text" name="date" >
+					<input type="text" name="time">
+					<input type="text" name="name">
+					<input type="tel" name="phone">
 					<button class="btn" type="button">Отправить</button>
 				</form>
 			</div>
@@ -119,7 +119,7 @@
 
 
 	<!-- Подвал сайта-->
-	<footer class="main-footer container clearfix">
+	<footer class="main-footer">
 		<!-- Раздел контактов -->
 		<div class="footer-contacts">
 			<p>Барбершоп «Бородинский»</p>
@@ -135,7 +135,7 @@
 			<a href="" class="btn">Инстаграмм</a>
 		</div>
 		<!-- Ссылка на разработчика -->
-		<div class="footer-copyright">
+		<div class="footer-studio">
 			<p>Разработано:</p>
 			<a href="http://htmlacademy.ru" target="_blank">htmlacademy.ru</a>
 		</div>
