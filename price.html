@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="main-header container clearfix">
     	<!-- Навигационное меню -->
     	<nav class="main-menu">
     		<ul>
@@ -22,7 +22,7 @@
     				<a href="index.html#news-anchor">Новости</a>
     			</li>
     			<li>
-    				<a href="#">Прайс-лист</a>
+    				<a>Прайс-лист</a>
     			</li>
     			<li>
     				<a href="shop.html">Магазин</a>
@@ -31,16 +31,16 @@
     				<a href="index.html#contacts-anchor">Контакты</a>
     			</li>
     		</ul>
-    		<!-- Блок входа -->
-    		<div class="user-block">
-    			<a href="#">Вход</a>
-    		</div>
     	</nav>
+		<!-- Блок входа -->
+		<div class="user-block">
+			<a href="#">Вход</a>
+		</div>
     </header>
 
 
     <!-- Основной контент -->
-    <main>
+    <main class="main-price container">
 		<div class="breadcrumbs">
 			<h1>Прайс-лист</h1>
 			<nav class="breadcrumbs-navigation">
@@ -54,47 +54,51 @@
 				</ul>
 			</nav>
 		</div>
-		<b>Истинно мужская стрижка</b>
+		<div class="slogan"><b>Истинно мужская стрижка</b></div>
 		<!-- Используемые средства -->
-		<div class="price-features">
-			<h2>Мы используем только лучшие средства:</h2>
-			<ul>
-				<li>Baxter of Californ</li>
-				<li>Mr Natty</li>
-				<li>Suavecito</li>
-				<li>Malin+Goetz</li>
-			</ul>
+		<div class="price-content clearfix">
+			<div class="price-features">
+				<h2>Мы используем только лучшие средства:</h2>
+				<ul>
+					<li>Baxter of Californ</li>
+					<li>Mr Natty</li>
+					<li>Suavecito</li>
+					<li>Malin+Goetz</li>
+				</ul>
+			</div>
+			<!-- Цены на услуги -->
+			<!-- Вопрос, может тут тут вместо h2 использовать caption для таблицы?? -->
+			<div class="service-prices">
+				<h2>Цены на услуги наших мастеров:</h2>
+				<table>
+					<tr>
+						<td>Стрижка</td>
+						<td>1500 р.</td>
+					</tr>
+					<tr>
+						<td>Стрижка бороды</td>
+						<td>500 р.</td>
+					</tr>
+					<tr>
+						<td>Накрутка усов</td>
+						<td>350 р.</td>
+					</tr>
+				</table>
+			</div>			
 		</div>
-		<!-- Цены на услуги -->
-		<!-- Вопрос, может тут тут вместо h2 использовать caption для таблицы?? -->
-		<div class="service-prices">
-			<h2>Цены на услуги наших мастеров:</h2>
-			<table>
-				<tr>
-					<td>Стрижка</td>
-					<td>1500 р.</td>
-				</tr>
-				<tr>
-					<td>Стрижка бороды</td>
-					<td>500 р.</td>
-				</tr>
-				<tr>
-					<td>Накрутка усов</td>
-					<td>350 р.</td>
-				</tr>
-			</table>
-		</div>
+
 		<!-- О нас -->
-		<div class="about-us">
-			<h2>Несколько слов о нас:</h2>
-			<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-			<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+		<div class="about-us clearfix">
+			<h2 class="about-us-caption">Несколько слов о нас:</h2>
+			<p class="about-us-left-col">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+			<p class="about-us-right-col">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
 		</div>
+
 	</main>
 
 
-		<!-- Подвал сайта-->
-	<footer class="main-footer">
+	<!-- Подвал сайта-->
+	<footer class="main-footer container clearfix">
 		<!-- Раздел контактов -->
 		<div class="footer-contacts">
 			<p>Барбершоп «Бородинский»</p>
@@ -110,7 +114,7 @@
 			<a href="" class="btn">Инстаграмм</a>
 		</div>
 		<!-- Ссылка на разработчика -->
-		<div class="footer-studio">
+		<div class="footer-copyright">
 			<p>Разработано:</p>
 			<a href="http://htmlacademy.ru" target="_blank">htmlacademy.ru</a>
 		</div>
