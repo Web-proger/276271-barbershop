@@ -406,4 +406,53 @@ footer {
 }
 
 
+/* sprite temp
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
 
+.sprite-fb-b {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -10px;
+}
+
+.sprite-fb-w {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -52px;
+}
+
+.sprite-inst-b {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -94px;
+}
+
+.sprite-inst-w {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -135px;
+}
+
+.sprite-login {
+    width: 18px;
+    height: 16px;
+    background-position: -10px -176px;
+}
+
+.sprite-vk-b {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -212px;
+}
+
+.sprite-vk-w {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -248px;
+}
+
+*/
