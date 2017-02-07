@@ -49,7 +49,7 @@ h2 {
 
 .main-menu {
 	float: left;
-	width: 600px;/*!*/
+	width: 600px;
 }
 
 .main-menu ul {
@@ -62,7 +62,7 @@ h2 {
 .main-menu li {
 	display: inline-block;
 	vertical-align: top;
-	font-size: 14px; /*!*/
+
 }
 
 .main-menu li:last-child {
@@ -133,15 +133,15 @@ h2 {
 .breadcrumbs li {
 	display: inline-block;
 	vertical-align: top;
-	font-size: 14px; /*!*/
-	line-height: 24px; /*!*/
+	font-size: 14px;
+	line-height: 24px;
 }
 
 /*** Подвал (footer) ***/
 .main-footer {
 	padding-top: 55px;
 	padding-bottom: 37px;
-	background: #222222 url("../img/footer-texture.jpg"); /*!*/
+	background: #222222 url("../img/footer-texture.jpg");
 	color: #ffffff;
 }
 
@@ -188,7 +188,7 @@ h2 {
 
 .social {
 	position: relative;
-	background-color: black; /*!*/
+	background-color: #000000;
 	transition: 0.5s;
 	transition-property: background-color;
 
@@ -253,6 +253,8 @@ h2 {
 
 /*** button ***/
 .btn {
+	display: inline-block;
+	vertical-align: top;
 	padding: 16px 25px;
 	font-family: "PT Sans Narrow", "Arial", sans-serif;
 	font-size: 14px;
@@ -283,7 +285,7 @@ h2 {
 .main-shop,
 .main-price,
 .main-item {
-	background: #f9f6f3 url("../img/white-texture.jpg"); /*!*/
+	background: #f8f5f2 url("../img/white-texture.jpg");
 }
 
 
@@ -298,7 +300,7 @@ h2 {
 	width: 368px;
 	height: 204px;
 	margin: 0 auto;
-	margin-bottom: 25px;
+	margin-bottom: 21px;
 }
 
 .features {
@@ -307,6 +309,7 @@ h2 {
 }
 
 .features-item {
+	position: relative;
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
@@ -315,9 +318,29 @@ h2 {
 	margin-left: -4px;
 }
 
+.features-item p {
+	margin: 0;
+	padding: 0 10px;
+}
+
 .features-item b {
+	display: inline-block;
+	vertical-align: top;
 	font-size: 30px;
 	line-height: 42px;
+	padding-bottom: 65px;
+}
+
+.features-item::before {
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	top: 53px;
+	left: 50%;
+	margin-left: -10px;
+	background-color: #f7f4f1;
+	transform: rotate(45deg);
 }
 	/*убираем отрицательный отступ у первого элемента,
 	сделайный для ликвидиции пробела inline-block */
@@ -330,16 +353,20 @@ h2 {
 }
 
 .index-content {
-	padding: 50px 80px;
+	padding: 45px 80px 50px 80px;
 	margin-bottom: 35px;
-	background: #f9f6f3 url("../img/white-texture.jpg"); /*!*/
-	color: #000000; /*!*/
+	background:
+		url("../img/index-decor.png") no-repeat,
+		#f8f5f2 url("../img/white-texture.jpg");
+	background-position: 50% 50%, 0 0;
+	color: #000000;
 }
 
 .index-content h2{
 	margin: 0;
 	font-size: 30px;
 	line-height: 42px;
+	margin-bottom: 25px;
 }
 
 .news,
@@ -348,10 +375,52 @@ h2 {
 	width: 380px;
 }
 
+.news time {
+	display: block;
+	margin-bottom: 25px;
+}
+
+.news p {
+	margin-bottom: 4px;
+}
+
 .gallery,
 .enroll {
 	float: right;
 	width: 300px;
+}
+
+.gallery-img {
+	border: 7px solid #ffffff;
+	width: 286px;
+	height: 164px;
+	margin-bottom: 38px;
+}
+
+.gallery .btn {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.gallary-prev {
+	margin-right: 20px;
+}
+
+.contacts p,
+.enroll p {
+	margin-bottom: 25px;
+}
+
+.enroll-form input[type="text"] {
+	box-sizing: border-box;
+	width: 140px;
+	margin-bottom: 20px;
+	padding: 7px 15px;
+	border: 2px solid #000101;
+}
+
+.enroll-form input[type="text"]:nth-child(odd) {
+	margin-right: 16px;
 }
 
 	/*-- price.html (прайс) --*/
@@ -488,9 +557,6 @@ footer {
 */
 
 /**Ободка блоков "второй" вложенности**/
-.features,
-.index-logo,
-.index-content,
 .breadcrumbs,
 .slogan,
 .price-content,
@@ -503,11 +569,6 @@ footer {
 }
 
 /**Ободка блоков "третий" вложенности**/
-.features-item,
-.news,
-.contacts,
-.gallery,
-.enroll,
 .price-features,
 .service-prices,
 .about-us-right-col,
