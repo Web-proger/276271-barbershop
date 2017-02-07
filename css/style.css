@@ -49,7 +49,7 @@ h2 {
 
 .main-menu {
 	float: left;
-	width: 640px;/*!*/
+	width: 600px;/*!*/
 }
 
 .main-menu ul {
@@ -80,9 +80,42 @@ h2 {
 	color: #ffffff;
 }
 
+.main-menu a:hover,
+.user-block a:hover {
+	background-color: #242424;
+}
+
 .user-block {
 	float: right;
-	width: 160px;
+	width: 140px;
+	text-align: right;
+}
+
+.user-block a {
+	position: relative;
+	padding: 26px;
+	padding-left: 53px;
+	padding-right: 20px;
+}
+
+.login::before {
+	position: absolute;
+	content: "";
+	background: url("../img/sprite-ico.png") no-repeat;
+	width: 18px;
+    height: 16px;
+    top: 29px;
+    left: 22px;
+    background-position: -10px -176px;
+	opacity: 0.4;
+}
+
+.login:hover::before {
+	opacity: 1;
+}
+
+.active-page {
+	box-shadow: inset 0 -4px #ffffff; 
 }
 
 /*** breadcrumbs  ***/
@@ -125,6 +158,7 @@ h2 {
 	float: left;
 	width: 141px;
 	font-size: 0;
+	text-align: center;
 }
 
 .main-footer p {
@@ -201,6 +235,12 @@ h2 {
 .footer-copyright {
 	float: right;
 	width: 140px;
+	text-align: center;
+}
+
+.footer-copyright .btn {
+	display: inline-block;
+	padding: 11px 20px 12px 24px;
 }
 
 
@@ -214,14 +254,22 @@ h2 {
 	text-transform: uppercase;
 	color: #ffffff;
 	background: #000000;
+	cursor: pointer;
 	text-decoration: none;
 	outline: none;
 	border: none;
 }
 
+.btn:hover {
+	background-color: #663d15;
+}
+
 /*** Общее для внутренних страниц ***/
 .header-logo  {
 	float: left;
+	padding: 20px;
+	padding-top: 23px;
+	padding-bottom: 18px
 }
 
 
@@ -421,20 +469,17 @@ h2 {
 
 /***** - Для тестирования - *****/
 /**Ободка главных модулей**/
-header,
 main,
 footer {
-	outline: 3px solid blue;
+	outline: 1px solid blue;
 }
 
 /**Ободка главных модулей**/
 .container {
-	outline: 2px solid gray;
+	outline: 1px solid gray;
 }
 
 /**Ободка блоков "второй" вложенности**/
-.main-menu,
-.user-block,
 .features,
 .index-logo,
 .index-content,
@@ -447,7 +492,7 @@ footer {
 .catalog,
 .item-gallery,
 .item-description {
-	outline: 2px solid green;
+	outline: 1px solid green;
 }
 
 /**Ободка блоков "третий" вложенности**/
@@ -476,29 +521,6 @@ footer {
     display: block;
 }
 
-.sprite-fb-b {
-    width: 12px;
-    height: 22px;
-    background-position: -10px -10px;
-}
-
-.sprite-fb-w {
-    width: 12px;
-    height: 22px;
-    background-position: -10px -52px;
-}
-
-.sprite-inst-b {
-    width: 21px;
-    height: 21px;
-    background-position: -10px -94px;
-}
-
-.sprite-inst-w {
-    width: 21px;
-    height: 21px;
-    background-position: -10px -135px;
-}
 
 .sprite-login {
     width: 18px;
@@ -506,16 +528,6 @@ footer {
     background-position: -10px -176px;
 }
 
-.sprite-vk-b {
-    width: 25px;
-    height: 16px;
-    background-position: -10px -212px;
-}
 
-.sprite-vk-w {
-    width: 25px;
-    height: 16px;
-    background-position: -10px -248px;
-}
 
 */
