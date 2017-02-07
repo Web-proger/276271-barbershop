@@ -250,6 +250,11 @@ h2 {
 	padding: 11px 20px 12px 24px;
 }
 
+.footer-copyright .btn:hover {
+	color: #000000;
+	background-color: #ffffff;
+}
+
 
 /*** button ***/
 .btn {
@@ -417,10 +422,15 @@ h2 {
 	margin-bottom: 20px;
 	padding: 7px 15px;
 	border: 2px solid #000101;
+	outline: none;
 }
 
 .enroll-form input[type="text"]:nth-child(odd) {
 	margin-right: 16px;
+}
+
+.enroll-form input[type="text"]:focus {
+	border-color: #663d15;
 }
 
 	/*-- price.html (прайс) --*/
