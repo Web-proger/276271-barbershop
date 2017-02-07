@@ -138,8 +138,8 @@ h2 {
 
 /*** Подвал (footer) ***/
 .main-footer {
-	padding-top: 60px;
-	padding-bottom: 41px;
+	padding-top: 55px;
+	padding-bottom: 37px;
 	background: #222222 url("../img/footer-texture.jpg"); /*!*/
 	color: #ffffff;
 }
@@ -164,6 +164,11 @@ h2 {
 .main-footer p {
 	font-size: 14px;
 	margin: 0;
+}
+
+.footer-social p,
+.footer-copyright p {
+	margin-bottom: 16px;
 }
 
 .footer-social a {
@@ -483,7 +488,6 @@ footer {
 .features,
 .index-logo,
 .index-content,
-.main-footer,
 .breadcrumbs,
 .slogan,
 .price-content,
@@ -501,9 +505,6 @@ footer {
 .contacts,
 .gallery,
 .enroll,
-.footer-contacts,
-.footer-social,
-.footer-copyright,
 .price-features,
 .service-prices,
 .about-us-right-col,
@@ -513,21 +514,3 @@ footer {
 	outline: 1px solid pink;
 }
 
-
-/* sprite temp
-.sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-
-.sprite-login {
-    width: 18px;
-    height: 16px;
-    background-position: -10px -176px;
-}
-
-
-
-*/
