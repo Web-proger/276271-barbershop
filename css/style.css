@@ -107,7 +107,7 @@ h2 {
 .main-footer {
 	padding-top: 60px;
 	padding-bottom: 41px;
-	background: #222222; /*!*/
+	background: #222222 url("../img/footer-texture.jpg"); /*!*/
 	color: #ffffff;
 }
 
@@ -139,11 +139,63 @@ h2 {
 	width: 43px;
 	height: 43px;
 	font-size: 0;
-	background-color: black; /*!*/
+	color: white;
 }
 
 .footer-social a:last-child {
 	margin-right: 0;
+}
+
+.social {
+	position: relative;
+	background-color: black; /*!*/
+	transition: 0.5s;
+	transition-property: background-color;
+
+}
+
+.social:hover {
+	background-color: #ffffff;
+}
+
+.vk-social::after,
+.fb-social::after,
+.inst-social::after {
+	position: absolute;
+	content: "";
+	background: url("../img/sprite-ico.png") no-repeat;
+    width: 25px;
+    height: 40px;
+    top: 0px;
+    transition: 0.5s;
+}
+
+.vk-social::after {
+	background-position: -10px -234px;
+	top: 0px;
+	left: 9px;	
+}
+
+.vk-social:hover::after {
+    background-position: -10px -198px;
+}
+
+.fb-social::after {
+    background-position: -10px -42px;
+	left: 15px;
+}
+
+.fb-social:hover::after {
+    background-position: -10px -0px;
+}
+
+.inst-social::after {
+	background-position: -10px -125px;
+	left: 12px;
+}
+
+.inst-social:hover::after {
+    background-position: -10px -84px;
 }
 
 .footer-copyright {
@@ -176,7 +228,7 @@ h2 {
 .main-shop,
 .main-price,
 .main-item {
-	background: #f9f6f3 url("../img/white-texture.png"); /*!*/
+	background: #f9f6f3 url("../img/white-texture.jpg"); /*!*/
 }
 
 
@@ -225,7 +277,7 @@ h2 {
 .index-content {
 	padding: 50px 80px;
 	margin-bottom: 35px;
-	background: #f9f6f3 url("../img/white-texture.png"); /*!*/
+	background: #f9f6f3 url("../img/white-texture.jpg"); /*!*/
 	color: #000000; /*!*/
 }
 
@@ -255,6 +307,12 @@ h2 {
 .price-features {
 	float: left;
 	width: 300px;
+}
+
+.price-features ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .service-prices {
@@ -322,6 +380,12 @@ h2 {
 	padding-bottom: 49px;
 }
 
+.sorting ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .item-gallery {
 	float: left;
 	width: 460px;
@@ -353,7 +417,6 @@ h2 {
 .product-article {
 	float: right;
 }
-
 
 
 /***** - Для тестирования - *****/
